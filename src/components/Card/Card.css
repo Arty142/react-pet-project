@@ -1,0 +1,21 @@
+.card {
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.card__header {
+	padding: 16px 20px;
+	border-bottom: 1px solid #e2e8f0;
+	font-weight: 600;
+}
+
+.card__body {
+	padding: 20px;
+}
+
+.card__footer {
+	padding: 16px 20px;
+	border-top: 1px solid #e2e8f0;
+	background: #f8fafc;
+}
