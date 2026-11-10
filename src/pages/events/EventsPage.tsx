@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import {Link, Outlet } from "react-router-dom";
 
-import { Card } from "../components/Card/Card";
-import { tasksApi } from "../api/tasksApi";
+import { Card } from "../../components/Card/Card";
+import { tasksApi } from "../../api/tasksApi";
 
-import type { Task } from "../types/tasks";
+import type { Task } from "../../types/tasks";
 
 function EventsPage() {
         const [tasks, setTasks] = useState<Task[]>([]);
@@ -78,6 +78,8 @@ function EventsPage() {
                                         ))}
                                 </div>
                         )}
+
+                        <Outlet />
                 </>
         );
 }

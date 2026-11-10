@@ -1,0 +1,141 @@
+.event-form {
+	width: 100%;
+	max-width: 560px;
+	margin: 40px auto;
+	padding: 32px;
+	background: #fff;
+	border: 1px solid #e2e8f0;
+	border-radius: 16px;
+	box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+}
+
+.event-form h1 {
+	margin: 0;
+	color: #172033;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.event-form .form-description {
+	margin: -14px 0 0;
+	color: #64748b;
+	font-size: 14px;
+}
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.form-field label {
+	color: #334155;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+	width: 100%;
+	min-height: 42px;
+	padding: 9px 12px;
+	box-sizing: border-box;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	background: #fff;
+	color: #172033;
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.competition-settings {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+}
+
+.competition-settings h2 {
+	margin: 0;
+	color: #334155;
+	font-size: 18px;
+}
+
+.form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.submit-button {
+	min-height: 44px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	background: #2563eb;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.submit-button:hover {
+	background: #1d4ed8;
+}
+
+.submit-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+	.event-form {
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	.form-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+.field-error {
+	color: #dc2626;
+	font-size: 12px;
+}
+
+.field-success {
+	color: #16a34a;
+	font-size: 12px;
+}
+
+.field-hint {
+	color: #64748b;
+	font-size: 12px;
+}
+
+.form-server-error {
+	padding: 12px;
+	border: 1px solid #fecaca;
+	border-radius: 8px;
+	background: #fef2f2;
+	color: #b91c1c;
+	font-size: 14px;
+}
+
